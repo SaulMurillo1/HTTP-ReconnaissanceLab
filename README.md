@@ -35,12 +35,30 @@ Run an Nmap scan on the target ip address to check for any open tcp ports: <br/>
 - We can see that port 80 (http) is open and it looks like its version is Microsoft IIS httpd 10.0.  Next, we can open a web browser and go to 10.3.27.15.  It looks like we get the WebGoat.Net page, which is a deliberately insecure web application maintained by OWASP designed to teach web application security lessons. 
 <br/>
 <br/>
-Commands: nmap 10.3.27.15 -sV -O
+Command: nmap 10.3.27.15 -sV -O
 <br/>
 <br/>
 <img src="https://i.imgur.com/X9cKbxm.png" height="80%" width="80%" alt="SSH Dictionary Attack" class="center"/>
 <br />
 <img src="https://i.imgur.com/fiWRAOt.png" height="80%" width="80%" alt="SSH Dictionary Attack" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Use the WhatWeb tool to enumerate possible valuable information about the target IP: <br/>
+<br/>
+- We can see that the whatweb tool is able to enumerate a lot of information about the target machine.
+<br/>
+- For example, it looks like the we can verify that the IIS Server vesion is 10.0, the ASP.NET version is 4.0.30319, the XXS Protection is set to 0 which means it does not have cross site scripting protection, and the default page of the target is /Default.aspx
+<br/>
+<br/>
+Command: whatweb 10.3.27.15
+<br/>
+<br/>
+<img src="https://i.imgur.com/AqC1yvr.png" height="80%" width="80%" alt="SSH Dictionary Attack" class="center"/>
 <br />
 <br />
 <br />
