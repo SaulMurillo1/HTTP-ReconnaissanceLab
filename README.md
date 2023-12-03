@@ -17,7 +17,7 @@ Disclaimer: The Kali Linux user machine and target machine used in this project 
 
 - <b>nmap</b>
 - <b>whatweb</b>
-- <b>http (httpie)</b>
+- <b>http (HTTPie)</b>
 - <b>browsh</b>
 
 
@@ -38,9 +38,9 @@ Run an Nmap scan on the target ip address to check for any open tcp ports: <br/>
 Command: nmap 10.3.27.15 -sV -O
 <br/>
 <br/>
-<img src="https://i.imgur.com/X9cKbxm.png" height="80%" width="80%" alt="SSH Dictionary Attack" class="center"/>
+<img src="https://i.imgur.com/X9cKbxm.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
 <br />
-<img src="https://i.imgur.com/fiWRAOt.png" height="80%" width="80%" alt="SSH Dictionary Attack" class="center"/>
+<img src="https://i.imgur.com/fiWRAOt.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
 <br />
 <br />
 <br />
@@ -58,7 +58,7 @@ Use the WhatWeb tool to enumerate possible valuable information about the target
 Command: whatweb 10.3.27.15
 <br/>
 <br/>
-<img src="https://i.imgur.com/AqC1yvr.png" height="80%" width="80%" alt="SSH Dictionary Attack" class="center"/>
+<img src="https://i.imgur.com/AqC1yvr.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
 <br />
 <br />
 <br />
@@ -66,7 +66,9 @@ Command: whatweb 10.3.27.15
 <br />
 <br />
 <br />
-Another tool we can use to enumerate valuable information about the target IP is Httpie: <br/>
+Another tool we can use to enumerate valuable information about the target IP is HTTPie: <br/>
+<br/>
+- HTTPie is designed for testing, debugging, and generally interacting with APIs & HTTP servers. The http & https commands allow for creating and sending arbitrary HTTP requests. They use simple and natural syntax and provide formatted and colorized output.
 <br/>
 - We can see that we are able to enumerate some of the same information as the WhatWeb tool.
 <br/>
@@ -74,7 +76,29 @@ Another tool we can use to enumerate valuable information about the target IP is
 Command: http 10.3.27.15
 <br/>
 <br/>
-<img src="https://i.imgur.com/opaXDRV.png" height="80%" width="80%" alt="SSH Dictionary Attack" class="center"/>
+<img src="https://i.imgur.com/opaXDRV.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Use the Dirb tool to help find other directories on the target machine site: <br/>
+<br/>
+- Dirb is a command line tool you can use to fuzz web sites or web apps. Dirb finds files and directories on your target site that are not directly linked from a publicly accessible page on the site or from the Internet. This means Dirb can map out your target beyond what you may find by just browsing the site yourself.
+<br/>
+- We can see that we are able to enumerate some other directories associated with http://10.3.27.15.
+<br/>
+<br/>
+Command: dirb http://10.3.27.15
+<br/>
+<br/>
+<img src="https://i.imgur.com/adXEKn3.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
+<br />
+<img src="https://i.imgur.com/oVJywax.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
+<br />
+<img src="https://i.imgur.com/s9lZagz.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
 <br />
 <br />
 <br />
