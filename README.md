@@ -66,6 +66,22 @@ Command: whatweb 10.3.27.15
 <br />
 <br />
 <br />
+Another tool we can use to enumerate valuable information about the target IP is Httpie: <br/>
+<br/>
+- We can see that we are able to enumerate some of the same information as the WhatWeb tool.
+<br/>
+<br/>
+Command: http 10.3.27.15
+<br/>
+<br/>
+<img src="https://i.imgur.com/opaXDRV.png" height="80%" width="80%" alt="SSH Dictionary Attack" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
