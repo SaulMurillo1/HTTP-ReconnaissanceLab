@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-This project consists of using the Linux tools such as Nmap, WhatWeb, HTTPie, & Browsh in order to help enumerate information about a target IIS (Internet Information Services) server.
+This project consists of using the Linux tools such as Nmap, WhatWeb, & HTTPie in order to help enumerate information about a target IIS (Internet Information Services) server.
 <br />
 <br />
 Internet Information Services (IIS) is a flexible, general-purpose web server from Microsoft that runs on Windows systems to serve requested HTML pages or files.
@@ -18,7 +18,6 @@ Disclaimer: The Kali Linux user machine and target machine used in this project 
 - <b>nmap</b>
 - <b>whatweb</b>
 - <b>http (HTTPie)</b>
-- <b>browsh</b>
 
 
 <h2>Environments Used </h2>
