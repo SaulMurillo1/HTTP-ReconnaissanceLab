@@ -1,4 +1,4 @@
-<h1>HTTP Reconnaissance</h1>
+![image](https://github.com/SaulMurillo1/HTTP-ReconnaissanceLab/assets/149205773/dc2094dd-793e-4d04-b1a2-010ed49c0445)<h1>HTTP Reconnaissance</h1>
 
 
 <h2>Description</h2>
@@ -98,6 +98,28 @@ Command: dirb http://10.3.27.15
 <img src="https://i.imgur.com/oVJywax.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
 <br />
 <img src="https://i.imgur.com/s9lZagz.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Use Nmap scripts to enumerate information about the http server: <br/>
+<br/>
+- As seen down below, we can also use Nmap scripts to enumerate information about the http server. 
+<br/>
+- Note: I am using a different target IP as before in this example below. 
+<br/>
+<br/>
+Command: nmap 10.3.17.11 -sv
+<br/>
+nmap 10.3.17.11 -p 80 -sV --script http-headers
+<br/>
+<br/>
+<img src="https://i.imgur.com/3fCgcB2.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
+<br />
+<img src="https://i.imgur.com/n0gmU7L.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
 <br />
 <br />
 <br />
