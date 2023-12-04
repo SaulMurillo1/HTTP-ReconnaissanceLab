@@ -109,17 +109,36 @@ Use Nmap scripts to enumerate information about the http server: <br/>
 <br/>
 - As seen down below, we can also use Nmap scripts to enumerate information about the http server. 
 <br/>
+- The http-header script will enumerate information, such as server version, ASP.NET version, XSS protection information, etc.  
+<br/>
+- The http-enum script will try to find directories that may be of importance.   
+<br/>
+- We can also see the type of http methods that are supported which can be extremely useful future information. 
+<br/>
+<br/>
 - Note: I am using a different target IP as before in this example below. 
 <br/>
 <br/>
-Command: nmap 10.3.17.11 -sv
+Commands: nmap 10.3.17.11 -sv
 <br/>
 nmap 10.3.17.11 -p 80 -sV --script http-headers
+<br/>
+nmap 10.3.17.11 -p 80 -sV --script http-enum
+<br/>
+nmap 10.3.17.11 -p 80 -sV --script http-methods --script-args http-methods.url-path=/webdav/
+<br/>
+nmap 10.3.17.11 -p 80 -sV --script http-webdav-scan --script-args http-methods.url-path=/webdav/
 <br/>
 <br/>
 <img src="https://i.imgur.com/3fCgcB2.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
 <br />
 <img src="https://i.imgur.com/n0gmU7L.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
+<br />
+<img src="https://i.imgur.com/EQ6gfbm.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
+<br />
+<img src="https://i.imgur.com/8VjVQXg.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
+<br />
+<img src="https://i.imgur.com/d3hqfLh.png" height="80%" width="80%" alt="HTTP Reconnaissance" class="center"/>
 <br />
 <br />
 <br />
