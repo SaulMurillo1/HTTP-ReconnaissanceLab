@@ -1,4 +1,4 @@
-![image](https://github.com/SaulMurillo1/HTTP-ReconnaissanceLab/assets/149205773/dc2094dd-793e-4d04-b1a2-010ed49c0445)<h1>HTTP Reconnaissance</h1>
+<h1>HTTP Reconnaissance</h1>
 
 
 <h2>Description</h2>
